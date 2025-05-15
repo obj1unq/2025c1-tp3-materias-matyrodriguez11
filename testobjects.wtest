@@ -1,0 +1,37 @@
+import objetos.*
+
+describe "test de materia" {
+  method initialize(){
+    const matematicas1 = new Materia(correlativas = [matematica, epyl])
+        
+	}
+
+	test "lionel empieza donde esta la pelota"{
+		assert.notEquals(lionel.position(), pelota.position())
+    }
+	
+	test "taquito"{
+		const posicionInicialPelota = pelota.position()
+	    assert.throwsException({lionel.taquito()})
+        assert.equals(posicionInicialPelota, pelota.position())
+	}
+}   
+
+describe "test de carrera" {
+  test "description" {
+    
+  }
+}
+
+describe "test de nota" {
+  test "description" {
+    
+  }
+}
+
+describe "test de estudiante
+" {
+  test "description" {
+    
+  }
+}
