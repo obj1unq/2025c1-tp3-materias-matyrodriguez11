@@ -2,7 +2,7 @@ import objetos.*
 
 describe "test de materia" {
   method initialize(){
-    const matematicas1 = new Materia(correlativas = [matematica, epyl])
+    const matematicas1 = new Materia(nombre = matematicas1, correlativas = [matematica, epyl])
         
 	}
 

@@ -1,14 +1,18 @@
 class Materia {
-    var curso = 
-
-    var correlativas 
+    const nota  = new Nota()
+    const estudiantes = []
+    var nombre 
+    
 
     method agregarCorrelativas(listaDeMaterias) {
         correlativas = listaDeMaterias
     }
 
-    const nota = new Nota()
+    method nota() = nota
+    
+    method nombre() = nombre
 
+    method estado() = nota.estado()
 }
 
 class Carrera {
@@ -17,18 +21,35 @@ class Carrera {
 }
 
 class Nota {
-    
-    var valor = 
+    var valor 
 
     method estado() = if valor >= 4 
-                        then ""
-                        else ""
+                        then "Aprobada"
+                        else "Desaprobada"
 }
 
 class Estudiante {
-    var carrerasQueCursa = []
+    const carrerasQueCursa
     
     method cantidad() {
       
     }
+}
+
+object programacion {
+    const materiasCarrera = [elementosDeProgramacion, matematica1, objetos1, objetos2, objetos3, basesDeDatos, trabajoFinal ]
+    
+
+}
+
+object medicina {
+    const materiasCarrera = [quimica, biologia1, biologia2, anatomiaGeneral ]
+
+
+}
+
+object derecho {
+    const materiasCarrera = [latin, derechoRomano, historiaDelDerechoArgentino, derechoPenal1, derechoPenal2 ]
+
+
 }
